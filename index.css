@@ -1,5 +1,6 @@
 body{
-    background-color: #8FA998;
+    /* background-color: #8FA998; */
+    background: linear-gradient(to right bottom, #8FA998, #333333);
     color: #333333;
     font-family: 'Roboto', Helvetica, sans-serif; /*google font and back up font*/
 }
@@ -109,6 +110,19 @@ body{
     
 }
 
+.linkButton{
+    background-color: #F2A65A;
+    color:#333333;
+    border-radius: 5px;
+}
+.linkButton>a{
+    color:#333333;
+    text-decoration: none;
+}
+.linkButton:hover{
+    background-color: orange;
+    font-size: larger;
+}
 
 .about-rad:hover{
     font-size:20px ;
