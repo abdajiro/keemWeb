@@ -1,15 +1,47 @@
 body{
     /* background-color: #8FA998; */
-    background: linear-gradient(to right bottom, #8FA998, #333333);
+    margin:0;
+    background-color: #8FA998;
     color: #333333;
     font-family: 'Roboto', Helvetica, sans-serif; /*google font and back up font*/
 }
 /* || Landing Page */
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vp;
+    height: 80vh;
+    min-height: 400px;
+    padding: 100px ;
+    background-color: #F2A65A;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(139% + 1.3px);
+    height: 291px;
+}
+
+.wave .shape-fill {
+    fill: #8FA998;
+}
 /* |||HomePage Styling */
 
 /* ||NavBar Styling */
 .navBar{
+    top:0;
     margin: -10px;
     padding: 0;
     height: 100%;
@@ -19,6 +51,7 @@ body{
     overflow:auto;
 } 
 
+/* navbar text */
 .navBar>nav>a{
   display: block;
   color:#8FA998;
@@ -27,12 +60,14 @@ body{
   
 }
 
+/* symbols styling */
 .material-symbols-outlined{
     position: relative;
-    padding: 0px 5px 0px 5px;
+    padding: 10px 5px 0px 10px;
     top: 5px;
 }
 
+/* pushes body to side */
 .bodyCont{
     margin-left: 200px;
     padding: 1px 16px;
@@ -71,49 +106,13 @@ body{
 }
 
 
-
-/* .headshot>div { /*selects all elements of class headshot that are in a div
-    display: flex; 
-    align-items:flex-end;
-    justify-content: center;
-  } */
-
-
-/* .headshot{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: 1fr 1fr;
-} */
-
-/* .box1{
-    grid-column-start:1;
-    grid-column-end:3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-
-.box2{
-    grid-column-start:3;
-    grid-column-end:4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.box3{
-    grid-column-start:1;
-    grid-column-end:3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    
-} */
-
 /* ||About Styling */
 
 /* About Me Heading Styling */
+
  .About-Me{
     border: 3px solid black;
-    background-color: #F2A65A;
+    background: #F2A65A;
     text-align: center;
 } 
 
@@ -135,8 +134,23 @@ body{
     background-color: #C9F299;
     padding: 0px 20px 0px 20px;
     box-shadow: 5px 5px 15px ;
-    height: 150px;
+    height: 180px;
     
+}
+
+/* |Technolgies Styling */
+.techBox{
+    display: flex;
+    justify-content: center;
+}
+
+i{
+    font-size: 5em;
+    color: #333333;
+}
+
+i:hover{
+    color:#F2A65A;
 }
 
 /* Button Styling */
@@ -160,5 +174,5 @@ body{
 .about-rad1:hover, .about-rad2:hover, .about-rad3:hover{
     font-size:20px ;
     box-shadow: 10px 10px 20px ;
-    height: 200px;
+    height: auto;
 }
