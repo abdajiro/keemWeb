@@ -4,11 +4,41 @@ body{
     color: #333333;
     font-family: 'Roboto', Helvetica, sans-serif; /*google font and back up font*/
 }
+/* || Landing Page */
 
 /* |||HomePage Styling */
 
 /* ||NavBar Styling */
+.navBar{
+    margin: -10px;
+    padding: 0;
+    height: 100%;
+    background-color: #333333;
+    width: 150px;
+    position: fixed;
+    overflow:auto;
+} 
 
+.navBar>nav>a{
+  display: block;
+  color:#8FA998;
+  padding: 0px 0px 20px 0px;
+  text-decoration: none;
+  
+}
+
+.material-symbols-outlined{
+    position: relative;
+    padding: 0px 5px 0px 5px;
+    top: 5px;
+}
+
+.bodyCont{
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+    
+}
 /* ||Title Styling */
 
 /* Title Styling */
@@ -40,9 +70,7 @@ body{
     
 }
 
-.box3{
 
-}
 
 /* .headshot>div { /*selects all elements of class headshot that are in a div
     display: flex; 
@@ -102,18 +130,23 @@ body{
 }
 
 /* Columns styling */
-.about-rad{
+.about-rad1, .about-rad2, .about-rad3{
     border-radius: 5px;
     background-color: #C9F299;
     padding: 0px 20px 0px 20px;
     box-shadow: 5px 5px 15px ;
+    height: 150px;
     
 }
+
+/* Button Styling */
 
 .linkButton{
     background-color: #F2A65A;
     color:#333333;
     border-radius: 5px;
+    border-color: black;
+    margin-bottom: 10px;
 }
 .linkButton>a{
     color:#333333;
@@ -124,7 +157,8 @@ body{
     font-size: larger;
 }
 
-.about-rad:hover{
+.about-rad1:hover, .about-rad2:hover, .about-rad3:hover{
     font-size:20px ;
     box-shadow: 10px 10px 20px ;
+    height: 200px;
 }
